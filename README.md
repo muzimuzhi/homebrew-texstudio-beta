@@ -13,10 +13,11 @@ Note: `texstudio-beta` conflicts with `texstudio`, so you may need to run `brew 
 
 ## Upgrade
 
-Upgrade cask file `texstudio-beta.rb`: 
+Upgrade cask file `texstudio-beta.rb`:
   - (clone this repo)
   - update `version` stanzas
   - update `sha256` stanzas obtained from `shasum -a 256 <downloaded .dmg file>`
+  - [veryfy upgrade][verify-cask-upgrade] by `brew cask audit --download <cask-file>` and `brew cask style --fix <cask-file>`
   - (open a pull request)
 
 Upgrade installed `texstudio-beta` cask:
@@ -40,3 +41,5 @@ Upgrade installed `texstudio-beta` cask:
     https://github.com/Homebrew/homebrew-cask/blob/master/doc/development/adding_a_cask.md#commit-messages
 [tap]: 
     https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap
+[verify-cask-upgrade]:
+    https://github.com/Homebrew/homebrew-cask/blob/master/.github/PULL_REQUEST_TEMPLATE.md
