@@ -6,10 +6,10 @@ So there is this homebrew tap.
 
 ## Installation
 
-  - `brew cask install muzimuzhi/texstudio-beta/texstudio-beta`
-  - or `brew tap muzimuzhi/texstudio-beta` and then `brew cask install texstudio-beta`.
+  - `brew install muzimuzhi/texstudio-beta/texstudio-beta`
+  - or `brew tap muzimuzhi/texstudio-beta` and then `brew install texstudio-beta`.
 
-Note: `texstudio-beta` conflicts with `texstudio`, so you may need to run `brew cask uninstall texstudio` before installing `texstudio-beta`.
+Note: `texstudio-beta` conflicts with `texstudio`, so you may need to run `brew uninstall texstudio` before installing `texstudio-beta`.
 
 ## Upgrade
 
@@ -17,11 +17,11 @@ Upgrade cask file `texstudio-beta.rb`:
   - (clone this repo)
   - update `version` stanzas
   - update `sha256` stanzas obtained from `shasum -a 256 <downloaded .dmg file>`
-  - [veryfy upgrade][verify-cask-upgrade] by `brew cask audit --download <cask-file>` and `brew cask style --fix <cask-file>`
+  - [verify upgrade][verify-cask-upgrade] by `brew audit --download <cask-file>` and `brew style --fix <cask-file>`
   - (open a pull request)
 
 Upgrade installed `texstudio-beta` cask:
-  - `brew cask upgrade texstudio-beta`
+  - `brew upgrade texstudio-beta`
 
 ## Useful links
 
