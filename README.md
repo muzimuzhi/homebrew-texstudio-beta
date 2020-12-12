@@ -17,7 +17,7 @@ Upgrade cask file `texstudio-beta.rb`:
   - (clone this repo)
   - update `version` stanzas
   - update `sha256` stanzas obtained from `shasum -a 256 <downloaded .dmg file>`
-  - [verify upgrade][verify-cask-upgrade] by `brew audit --download <cask-file>` and `brew style --fix <cask-file>`
+  - [verify upgrade][verify-cask-upgrade] by `brew audit --cask </path/to/cask-file>` and `brew style --fix </path/to/cask-file>`
   - (open a pull request)
 
 Upgrade installed `texstudio-beta` cask:
