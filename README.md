@@ -21,7 +21,7 @@ Upgrade cask file `texstudio-beta.rb`:
   - (open a pull request)
 
 Upgrade installed `texstudio-beta` cask:
-  - `brew upgrade texstudio-beta`
+  - `brew update && brew upgrade texstudio-beta`
 
 ## Useful links
 
