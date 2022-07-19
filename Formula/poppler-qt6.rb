@@ -10,6 +10,12 @@ class PopplerQt6 < Formula
     formula "poppler"
   end
 
+  bottle do
+    root_url "https://github.com/muzimuzhi/homebrew-texstudio-beta/releases/download/poppler-qt6-22.06.0"
+    sha256 big_sur:      "521543c8d419298c265a147225b1ef59def33abdf33888b2b74e6f52c4a4e2df"
+    sha256 x86_64_linux: "0baef04dd595726aefd6213b6328e914c82173e0eb730a22f2b03a41e39e10c5"
+  end
+
   depends_on "cmake" => :build
   depends_on "gobject-introspection" => :build
   depends_on "pkg-config" => :build
