@@ -11,7 +11,18 @@ So there is this homebrew tap.
 
 Note: `texstudio-beta` conflicts with `texstudio`, so you may need to run `brew uninstall texstudio` before installing `texstudio-beta`.
 
-## Upgrade
+## Upgrading a formula
+
+- Update version
+- Open a PR
+- After checks check, label PR with `pr-pull` label
+- @github-actions bot will update bottles then merge commits in PR
+
+See [Homebrew tap with bottles uploaded to GitHub Releases][tap-with-bottles]
+
+[tap-with-bottles]: https://brew.sh/2020/11/18/homebrew-tap-with-bottles-uploaded-to-github-releases/
+
+## Upgrading a cask
 
 Upgrade cask file `texstudio-beta.rb`:
   - (clone this repo)
