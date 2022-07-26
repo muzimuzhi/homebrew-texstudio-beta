@@ -13,6 +13,13 @@ Note: `texstudio-beta` conflicts with `texstudio`, so you may need to run `brew 
 
 ## Upgrading a formula
 
+Run ([doc](https://docs.brew.sh/Manpage#bump-cask-pr-options-cask))
+```bash
+brew bump-formula-pr muzimuzhi/texstudio-beta/<formula> --version=<version>
+```
+
+Or, through manual steps:
+
 - Update version
 - Open a PR
 - After checks check, label PR with `pr-pull` label
@@ -23,6 +30,13 @@ See [Homebrew tap with bottles uploaded to GitHub Releases][tap-with-bottles]
 [tap-with-bottles]: https://brew.sh/2020/11/18/homebrew-tap-with-bottles-uploaded-to-github-releases/
 
 ## Upgrading a cask
+
+Run ([doc](https://docs.brew.sh/Manpage#bump-formula-pr-options-formula))
+```bash
+brew bump-cask-pr muzimuzhi/texstudio-beta/<cask> --version=<version>
+```
+
+Or, through manual steps:
 
 Upgrade cask file `texstudio-beta.rb`:
   - (clone this repo)
