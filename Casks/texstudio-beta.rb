@@ -8,6 +8,11 @@ cask "texstudio-beta" do
   desc "Fully featured LaTeX editor, beta version"
   homepage "https://texstudio.org/"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   conflicts_with cask: "texstudio"
 
   app "texstudio.app"
