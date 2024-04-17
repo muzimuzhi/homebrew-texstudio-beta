@@ -1,6 +1,6 @@
 cask "texstudio-beta" do
-  version "4.8.0alpha5"
-  sha256 "92ee7a3c2825036ca3f057e63debb42931960df1db0047d533346996cf341d80"
+  version "4.8.0alpha6"
+  sha256 "e43aeebc2430e25e672d8f661b209492ecb4c7ef393e46ae767cb2b4b94805c8"
 
   url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx.dmg",
       verified: "github.com/texstudio-org/texstudio/"
