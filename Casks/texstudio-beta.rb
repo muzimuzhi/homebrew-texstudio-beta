@@ -1,8 +1,22 @@
 cask "texstudio-beta" do
-  version "4.8.1rc1"
-  sha256 "763522117322e25d191109659eb7f6e68e0e5b1e25d4b4c76e2c703d9d3cda7e"
+  arch arm: "-m1.zip", intel: ".dmg"
 
-  url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx.dmg",
+  version "4.8.2alpha1"
+  sha256 arm:   "9b3ab47a8d6877a83fa1c9958f1483a5de463f5802264f81dca06505b19538b7",
+         intel: "1b4dac303c8ed5e1ebd5386f45daaefcdaac31cce659a3b2e6a988969715d7c2"
+
+  on_arm do
+    depends_on macos: ">= :sonoma"
+
+    app "texstudio-#{version}-osx-m1.app"
+  end
+  on_intel do
+    depends_on macos: ">= :big_sur"
+
+    app "texstudio.app"
+  end
+
+  url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx#{arch}",
       verified: "github.com/texstudio-org/texstudio/"
   name "TeXstudio"
   desc "Fully featured LaTeX editor, beta version"
@@ -30,8 +44,6 @@ cask "texstudio-beta" do
   end
 
   conflicts_with cask: "texstudio"
-
-  app "texstudio.app"
 
   zap trash: [
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/texstudio.sfl*",
