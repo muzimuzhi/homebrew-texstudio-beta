@@ -1,9 +1,9 @@
 cask "texstudio-beta" do
   arch arm: "-m1.zip", intel: ".dmg"
 
-  version "4.8.2rc3"
-  sha256 arm:   "70352d257653803d646350cb9bcb9650c9b00ef32ee127fa030966f9fe49905e",
-         intel: "9ad8cbe178912da62b8c53aeb07c75bf00e66cfb92771987a2d013fdeab6c69a"
+  version "4.8.3alpha1"
+  sha256 arm:   "e6311ab4c15f856dbb75ca5270c512c38a224a1fca20febb6be9a93d36f208e0",
+         intel: "05fb0081181d45fa2bd5de4ef8635e7a0ee0bde4b0ed01cb658d3d94a365ddbd"
 
   on_arm do
     depends_on macos: ">= :sonoma"
