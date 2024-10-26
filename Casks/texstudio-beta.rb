@@ -13,7 +13,7 @@ cask "texstudio-beta" do
   on_intel do
     depends_on macos: ">= :big_sur"
 
-    app "texstudio.app"
+    app "texstudio-#{version}-osx.app"
   end
 
   url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx#{arch}.zip",
