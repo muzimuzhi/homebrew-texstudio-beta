@@ -8,12 +8,12 @@ cask "texstudio-beta" do
   on_arm do
     depends_on macos: ">= :sonoma"
 
-    app "texstudio-#{version}-osx-m1.app"
+    app "texstudio-#{version}-osx-m1.app", target: "texstudio.app"
   end
   on_intel do
     depends_on macos: ">= :big_sur"
 
-    app "texstudio-#{version}-osx.app"
+    app "texstudio-#{version}-osx.app", target: "texstudio.app"
   end
 
   url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx#{arch}.zip",
