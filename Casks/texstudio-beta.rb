@@ -1,5 +1,5 @@
 cask "texstudio-beta" do
-  arch arm: "-m1.zip", intel: ".dmg"
+  arch arm: "-m1", intel: ""
 
   version "4.8.5alpha1"
   sha256 arm:   "61db27a12a54ec046c27f241e182a0a9387fb9c3e0fe20434e5f271bdea4277f",
@@ -16,7 +16,7 @@ cask "texstudio-beta" do
     app "texstudio.app"
   end
 
-  url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx#{arch}",
+  url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx#{arch}.zip",
       verified: "github.com/texstudio-org/texstudio/"
   name "TeXstudio"
   desc "Fully featured LaTeX editor, beta version"
