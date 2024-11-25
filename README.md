@@ -32,12 +32,18 @@ brew tap-new --github-packages --no-git USER/REPO
     https://docs.brew.sh/Manpage#bump-cask-pr-options-cask
   - `brew tap-new`
     https://docs.brew.sh/Manpage#tap-new-options-userrepo
-- More Homebrew Documentation
+- Syncing with upstream
+  - Workflow generator in Homebrew/brew
+    `brew tap-new` uses it to generate `.github/workflows/{tests,publish}.yml`
+    https://github.com/Homebrew/brew/blob/master/Library/Homebrew/dev-cmd/tap-new.rb
+  - `texstudio.rb` from Homebrew/homebrew-cask
+    https://github.com/Homebrew/homebrew-cask/blob/HEAD/Casks/t/texstudio.rb
+- More Homebrew documentation
   - Cask stanzas
     https://docs.brew.sh/Adding-Software-to-Homebrew#cask-stanzas
   - Commit message rules
     https://docs.brew.sh/Adding-Software-to-Homebrew#commit-messages
-  - How to Create and Maintain a Tap
+  - How to create and maintain a Tap
     https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap
   - Homebrew tap with bottles uploaded to GitHub Releases
     https://brew.sh/2020/11/18/homebrew-tap-with-bottles-uploaded-to-github-releases/
