@@ -1,4 +1,4 @@
-# Homebrew tap texstudio-beta
+# Homebrew tap `muzimuzhi/beta`
 
 Due to too few downloads, on 5 May 2020, cask `texstudio-beta` (2.12.22beta2) was [removed] from [`homebrew-cask-version`][homebrew-cask-version], the official repo for pre-release casks.
 
@@ -9,13 +9,13 @@ So there is this homebrew tap.
 ```bash
 # installation
 # note that `texstudio-beta` conflicts with `texstudio`
-brew install muzimuzhi/texstudio-beta/texstudio-beta
+brew install muzimuzhi/beta/texstudio-beta
 
 # formula upgrading
-brew bump-formula-pr muzimuzhi/texstudio-beta/FORMULA --version=VERSION [--write-only]
+brew bump-formula-pr muzimuzhi/beta/FORMULA --version=VERSION [--write-only]
 
 # cask upgrading
-brew bump-cask-pr muzimuzhi/texstudio-beta/CASK --version=VERSION [--write-only]
+brew bump-cask-pr muzimuzhi/beta/CASK --version=VERSION [--write-only]
 
 # check out latest tap workflows
 brew tap-new --github-packages --no-git USER/REPO
