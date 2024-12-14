@@ -7,15 +7,9 @@ cask "texstudio-beta" do
 
   on_arm do
     depends_on macos: ">= :sonoma"
-
-    # it's NOT recommended to rename the target only for removing version numbers
-    # https://docs.brew.sh/Cask-Cookbook#target-should-only-be-used-in-select-cases
-    app "texstudio-#{version}-osx-m1.app"
   end
   on_intel do
     depends_on macos: ">= :big_sur"
-
-    app "texstudio-#{version}-osx.app"
   end
 
   url "https://github.com/texstudio-org/texstudio/releases/download/#{version}/texstudio-#{version}-osx#{arch}.zip",
@@ -46,6 +40,10 @@ cask "texstudio-beta" do
   end
 
   conflicts_with cask: "texstudio"
+
+  # it's NOT recommended to rename the target only for removing version numbers
+  # https://docs.brew.sh/Cask-Cookbook#target-should-only-be-used-in-select-cases
+  app "texstudio-#{version}-osx#{arch}.app"
 
   zap trash: [
     "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/texstudio.sfl*",
